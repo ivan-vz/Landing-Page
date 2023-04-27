@@ -1,0 +1,150 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header, .footer, .one{
+    background-color: #1F2937;
+} 
+
+.header, .footer{
+    height: 50px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header ul{
+    display: flex;
+    gap: 16px;
+}
+
+.logo{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.One > h2{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.onetext{
+    width: 500px;
+}
+
+.two > h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+button{
+    background-color: #3882f3;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border-color: transparent;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.square{
+    width: 150px;
+    height: 150px;
+    border: #3882f3 solid 3px;
+    border-radius: 16px;
+}
+
+.card{
+    width: 150px;
+    height: 300px;
+}
+
+.card p{
+    text-align: center;
+}
+
+.three{
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+}
+
+.three .quote{
+    width: 800px;
+    font-size: 36px;
+    font-style: italic;
+    color: black;
+}
+
+.three .by {
+    text-align: end;
+    font-weight: 900;
+    font-size: 20px;
+    margin-right: 80px;
+}
+
+.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four .msjBody{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    background-color: #3882f3;
+    color: white;
+}
+
+.four button {
+    border-color: white;
+    height: 50px;
+}
+
+.four h3{
+    font-weight: 900;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
