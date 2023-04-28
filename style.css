@@ -1,20 +1,29 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
     display: flex;
     flex-direction: column;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.header, .footer, .one{
+.header, .footer{
     background-color: #1F2937;
 } 
 
-.header, .footer{
+.header{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    padding-bottom: 50px;
+}
+
+.footer{
     height: 50px;
 }
 
 ul{
-    margin: 0;
-    padding: 0;
     list-style-type: none;
 }
 
@@ -25,39 +34,56 @@ a{
     color: #E5E7EB;
 }
 
-.header{
+.navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
 }
 
-.header ul{
+.navbar ul{
     display: flex;
     gap: 16px;
 }
 
-.logo{
-    font-size: 24px;
-    color: #F9FAF8;
+.navbar a{
+    font-size: 14px;
 }
 
-.one{
+.header .logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.banner{
     display: flex;
-    justify-content: center;
+    gap: 50px;
     color: white;
 }
 
-.One > h2{
+.banner h2{
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
 }
 
-.onetext{
-    width: 500px;
+.banner img {
+    width: 400px;
+    height: 200px;
 }
 
-.two > h2{
+.bannertext{
+    width: 400px;
+}
+
+.bannertext p {
+    margin-bottom: 6px;
+    color: whitesmoke;
+}
+
+.one > h2{
     text-align: center;
     font-size: 36px;
     font-weight: bolder;
@@ -66,10 +92,11 @@ a{
 
 button{
     background-color: #3882f3;
-    padding: 10px 20px;
+    padding: 5px 25px;
     border-radius: 8px;
     border-color: transparent;
     color: white;
+    font-weight: 900;
 }
 
 .content {
@@ -82,6 +109,7 @@ button{
     justify-content: center;
     gap: 60px;
 }
+
 .square{
     width: 150px;
     height: 150px;
@@ -98,33 +126,33 @@ button{
     text-align: center;
 }
 
-.three{
+.two{
     background-color: #E5E7EB;
     display: flex;
     justify-content: center;
 }
 
-.three .quote{
+.two .quote{
     width: 800px;
     font-size: 36px;
     font-style: italic;
-    color: black;
+    font-weight: 100;
 }
 
-.three .by {
+.two .by {
     text-align: end;
     font-weight: 900;
     font-size: 20px;
     margin-right: 80px;
 }
 
-.four{
+.three{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.four .msjBody{
+.three .msjBody{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -133,12 +161,12 @@ button{
     color: white;
 }
 
-.four button {
+.three button {
     border-color: white;
     height: 50px;
 }
 
-.four h3{
+.three h3{
     font-weight: 900;
 }
 
