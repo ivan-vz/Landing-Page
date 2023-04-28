@@ -88,6 +88,7 @@ a{
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    margin: 50px;
 }
 
 button{
@@ -115,6 +116,7 @@ button{
     height: 150px;
     border: #3882f3 solid 3px;
     border-radius: 16px;
+    margin-bottom: 10px;
 }
 
 .card{
@@ -127,16 +129,18 @@ button{
 }
 
 .two{
+    height: 400px;
     background-color: #E5E7EB;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .two .quote{
     width: 800px;
     font-size: 36px;
     font-style: italic;
-    font-weight: 100;
+    color: #4a4b4e;
 }
 
 .two .by {
@@ -150,6 +154,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 400px;
 }
 
 .three .msjBody{
@@ -159,11 +164,13 @@ button{
     width: 800px;
     background-color: #3882f3;
     color: white;
+    padding: 40px 60px;
+    border-radius: 10px;
 }
 
 .three button {
     border-color: white;
-    height: 50px;
+    height: 45px 50px;
 }
 
 .three h3{
@@ -175,4 +182,5 @@ button{
     align-items: center;
     justify-content: center;
     color: white;
+    padding: 40px;
 }
