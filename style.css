@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,17 +12,6 @@ body {
 .header, .footer{
     background-color: #1F2937;
 } 
-
-.header{
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    padding-bottom: 50px;
-}
-
-.footer{
-    height: 50px;
-}
 
 ul{
     list-style-type: none;
@@ -34,10 +24,34 @@ a{
     color: #E5E7EB;
 }
 
+button{
+    background-color: #3882f3;
+    padding: 5px 25px;
+    border-radius: 8px;
+    border-color: transparent;
+    color: white;
+    font-weight: 900;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.header .logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 80px;
 }
@@ -51,14 +65,10 @@ a{
     font-size: 14px;
 }
 
-.header .logo{
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: 900;
-}
-
 .banner{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
     color: white;
 }
@@ -83,6 +93,14 @@ a{
     color: whitesmoke;
 }
 
+/* Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* One */
 .one > h2{
     text-align: center;
     font-size: 36px;
@@ -91,24 +109,16 @@ a{
     margin: 50px;
 }
 
-button{
-    background-color: #3882f3;
-    padding: 5px 25px;
-    border-radius: 8px;
-    border-color: transparent;
-    color: white;
-    font-weight: 900;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-}
-
 .cards{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 60px;
+}
+
+.card{
+    width: 150px;
+    height: 300px;
 }
 
 .square{
@@ -119,25 +129,28 @@ button{
     margin-bottom: 10px;
 }
 
-.card{
-    width: 150px;
-    height: 300px;
-}
-
 .card p{
     text-align: center;
 }
+
+/*Two*/
 
 .two{
     height: 400px;
     background-color: #E5E7EB;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+.two .quoteBody{
+    flex-basis: 800px;
+    padding: 10px;
+}
+
 .two .quote{
-    width: 800px;
+    display: flex;
     font-size: 36px;
     font-style: italic;
     color: #4a4b4e;
@@ -150,34 +163,43 @@ button{
     margin-right: 80px;
 }
 
+/* Three */
+
 .three{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 400px;
+    padding: 20px;
 }
 
 .three .msjBody{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 800px;
+    flex-wrap: wrap;
+    flex-basis: 800px;
     background-color: #3882f3;
     color: white;
     padding: 40px 60px;
+    gap: 100px;
     border-radius: 10px;
 }
 
 .three button {
     border-color: white;
-    height: 45px 50px;
+    width: 120px;
+    height: 30px;
 }
 
 .three h3{
     font-weight: 900;
 }
 
+/* Footer */
+
 .footer{
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
